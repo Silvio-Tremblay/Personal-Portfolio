@@ -4,6 +4,7 @@ import { Link } from "react-router-dom"
 import { styles } from "../styles"
 import { navLinks } from "../constants"
 import { menu, close } from "../assets"
+import Logo from "../../public/assets/img/logo.png"
 
 
 const Navbar = () => {
@@ -21,7 +22,7 @@ const Navbar = () => {
           window.scrollTo(0, 0);
           }}
         >
-          <img src="assets/logo.png" alt="logo" className="w-9 
+          <img src={Logo} alt="logo" className="w-9 
           h-9 object-contain" />
           <p className='text-white text-[18px]
           font-bold cursor-pointer'>Silvio <span 
