@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react'
-import { Link } from "react-router-dom"
+import React, { useEffect, useState } from 'react';
+import { Link } from "react-router-dom";
 
-import { styles } from "../styles"
-import { navLinks } from "../constants"
-import { menu, close } from "../assets"
-import Logo from "../../public/assets/img/logo.png"
+import { styles } from "../styles";
+import { navLinks } from "../constants";
+import { menu, close } from "../assets";
+import Logo from "../assets/logo.png";
 
 
 const Navbar = () => {

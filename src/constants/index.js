@@ -1,8 +1,4 @@
 import {
-    mobile,
-    backend,
-    creator,
-    web,
     javascript,
     typescript,
     html,
@@ -24,6 +20,12 @@ import {
     tripguide,
     threejs,
   } from "../assets";
+
+  import react from "../assets/react.png";
+  import unity from "../assets/unity.png";
+  import javapython from "../assets/javapython.png";
+  import micro from "../assets/micro.png";
+  
   
   export const navLinks = [
     {
@@ -43,19 +45,19 @@ import {
   const services = [
     {
       title: "Web Developer",
-      icon: web,
+      icon: react,
     },
     {
-      title: "React Native Developer",
-      icon: mobile,
+      title: "Game Developer",
+      icon: unity,
     },
     {
-      title: "Backend Developer",
-      icon: backend,
+      title: "Java and Python Developer",
+      icon: javapython,
     },
     {
-      title: "Content Creator",
-      icon: creator,
+      title: "Microsoft Suite Proficient",
+      icon: micro,
     },
   ];
   
