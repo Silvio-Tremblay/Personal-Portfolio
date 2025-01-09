@@ -1,30 +1,27 @@
+import { l } from "maath/dist/misc-19a3ec46.esm";
 import {
-    javascript,
-    typescript,
-    html,
+    react,
+    unity,
+    javapython,
+    micro,
+    landsat,
     css,
-    reactjs,
-    redux,
-    tailwind,
+    sql,
+    c,
+    csharp,
+    java,
+    python,
+    github,
+    html,
+    javascript,
     nodejs,
-    mongodb,
-    git,
-    figma,
-    docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
+    reactjs,
+    tailwind,
     threejs,
+    dal,
+    doublemine,
+    json,
   } from "../assets";
-
-  import react from "../assets/react.png";
-  import unity from "../assets/unity.png";
-  import javapython from "../assets/javapython.png";
-  import micro from "../assets/micro.png";
   
   
   export const navLinks = [
@@ -35,6 +32,10 @@ import {
     {
       id: "work",
       title: "Work",
+    },
+    {
+      id: "projects",
+      title: "Projects",
     },
     {
       id: "contact",
@@ -63,11 +64,31 @@ import {
   
   const technologies = [
     {
-      name: "HTML 5",
+      name: "Java",
+      icon: java,
+    },
+    {
+      name: "Python",
+      icon: python,
+    },
+    {
+      name: "GitHub",
+      icon: github,
+    },
+    {
+      name: "C#",
+      icon: csharp,
+    },
+    {
+      name: "C",
+      icon: c,
+    },
+    {
+      name: "HTML",
       icon: html,
     },
     {
-      name: "CSS 3",
+      name: "CSS",
       icon: css,
     },
     {
@@ -75,16 +96,12 @@ import {
       icon: javascript,
     },
     {
-      name: "TypeScript",
-      icon: typescript,
-    },
-    {
       name: "React JS",
       icon: reactjs,
     },
     {
-      name: "Redux Toolkit",
-      icon: redux,
+      name: "SQL",
+      icon: sql,
     },
     {
       name: "Tailwind CSS",
@@ -95,173 +112,81 @@ import {
       icon: nodejs,
     },
     {
-      name: "MongoDB",
-      icon: mongodb,
-    },
-    {
       name: "Three JS",
       icon: threejs,
-    },
-    {
-      name: "git",
-      icon: git,
-    },
-    {
-      name: "figma",
-      icon: figma,
-    },
-    {
-      name: "docker",
-      icon: docker,
     },
   ];
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      title: "Teaching Assistant",
+      company_name: "Dalhousie University",
+      icon: dal,
+      iconBg: "#ffffff",
+      date: "Sept 2024 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Led a section of 40 students to provide a comprehensive and collaborative learning experience for the university’s Discrete Math for CS course",
+        "Assisted in helping improve students’ understanding of the course’s topics, improving attendance by 60%",
+        "Provided formative feedback that allowed students to reflect on previous topics, leading to an average grade increase of 40% on future assessments",
       ],
-    },
-    {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-  ];
-  
-  const testimonials = [
-    {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
+    }
   ];
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Double Mine",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "I developed 2D Minesweeper game in Unity that follows a different rule-set than the original game. I programmed a comprehensive UI and interactive controls to chose game difficulty and reset the game",
       tags: [
         {
-          name: "react",
+          name: "unity",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "c#",
           color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: doublemine,
+      link: "https://github.com/Silvio-Tremblay/Double-Mine",
+      demo: "",
     },
     {
-      name: "Job IT",
+      name: "Landsat Reflectance",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "I participated in the 2024 Nasa SpaceApps Hackathon to deploy a webpage displaying current Landsat information and reflectance metrics. I collaborated in a group of three students to program the API to obtain the Landsat information and develop the webpage within the 24 hour time lim",
       tags: [
         {
-          name: "react",
+          name: "html",
           color: "blue-text-gradient",
-        },
-        {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: jobit,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
         },
         {
           name: "css",
+          color: "green-text-gradient",
+        },
+        {
+          name: "python",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: landsat,
+      link: "https://github.com/Silvio-Tremblay/Landsat-Reflectance-Project",
+      demo: "",
+    },
+    {
+      name: "JSON Front-End Compiler",
+      description:
+        "I developed the Front-End of a JSON compiler in Python for a Theory of Computer Science course. I utilized course knowledge to program a scanner and parser to handle lexical, syntactic, and lexical errors of the provided JSON grammar. I provided output in the form of an abstract syntax tree with an error log which would display the type and location of any detected errors",
+      tags: [
+        {
+          name: "python",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: json,
+      link: "https://github.com/Silvio-Tremblay/JSON-Front-End-Compiler",
+      demo: "",
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, projects };
